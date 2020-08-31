@@ -22,5 +22,9 @@ node index.js
 ## Dev Team
 ### Info
 LPO - IT Student at CPNV
+
+### Used repositories
+Twit: https://github.com/ttezel/twit
+
 ### Contact
 luispedro.pinheiro@hotmail.com
