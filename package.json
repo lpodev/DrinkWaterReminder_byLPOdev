@@ -1,0 +1,7 @@
+{
+  "name": "DrinkWaterReminder_byLPOdev",
+  "version": "1.0.0",
+  "dependencies": {
+    "twit": "latest"
+  }
+}
