@@ -1,30 +1,21 @@
-let nbReminder = 0;
-var Twit = require('twit');
+// Required files
+var Twit = require('twit')
+require('config/.const')
+require('controller/controller')
 
-// Twitter's API
+// Load your Twitter API into a Twit
 var T = new Twit({
-  consumer_key:         '...',
-  consumer_secret:      '...',
-  access_token:         '...',
-  access_token_secret:  '...',
+  consumer_key:         consKey,
+  consumer_secret:      consSecret,
+  access_token:         acceToken,
+  access_token_secret:  acceTokenSecret,
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
   strictSSL:            true,     // optional - requires SSL certificates to be valid.
 });
 
+// Variable that counts the Reminder number
+nbReminder = 0
+
+// Calls the function SetAnInterval that is in controller.js
 SetAnInterval();
 
-function SetAnInterval() {
-  setInterval(postTweet,1000*60*60);
-}
-
-function postTweet()
-{
-  nbReminder += 1;
-  //
-  //  tweet 'Water Reminder'
-  //
-  T.post('statuses/update', { status: "Reminder n°" + nbReminder +" \n🥤 Go get some water bro 🥤 " }, function(err, data, response) {
-    console.log(data);
-  });
-  return "Done";
-}

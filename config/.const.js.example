@@ -1,0 +1,12 @@
+/**
+ * Title: .const.js
+ * Author: LPOdev
+ * Date: 01/09/2020
+ * Description: This script will be used to enter your API Keys on a file that won't be load in Github or other Apps.
+ * */
+
+//TODO replace "..." by your API key
+var consKey = "..."
+var consSecret = "..."
+var acceToken = "..."
+var acceTokenSecret = "..."
