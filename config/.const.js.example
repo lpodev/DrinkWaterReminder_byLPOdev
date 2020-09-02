@@ -6,7 +6,7 @@
  * */
 
 //TODO replace "..." by your API key
-var consKey = "..."
-var consSecret = "..."
-var acceToken = "..."
-var acceTokenSecret = "..."
+consKey = "..."
+consSecret = "..."
+acceToken = "..."
+acceTokenSecret = "..."

@@ -1,7 +1,7 @@
 // Required files
 var Twit = require('twit')
-require('config/.const')
-require('controller/controller')
+require('./config/.const')
+require ('./data/data')
 
 // Load your Twitter API into a Twit
 var T = new Twit({
@@ -13,9 +13,34 @@ var T = new Twit({
   strictSSL:            true,     // optional - requires SSL certificates to be valid.
 });
 
-// Variable that counts the Reminder number
-nbReminder = 0
+let nbReminder = 43 // Variable that counts the Reminder number
 
-// Calls the function SetAnInterval that is in controller.js
-SetAnInterval();
+SetAnInterval() // Calls the function SetAnInterval that is in controller.js
 
+/** Controller */
+function SetAnInterval() {
+
+    setInterval(postTweet,1000*60*60);
+}
+
+function postTweet(nbReminder)
+{
+    nbReminder += 1
+    var tweet = getTweetToPost()
+    //  tweet 'Drink Water Reminder'
+    T.post('statuses/update', { status: "Reminder n°" + nbReminder + tweet }, function(err, data, response) {
+        console.log(data)
+    })
+    return "Reminder posted, see you in one hour.";
+}
+
+/** Model */
+// Required files
+require('./data/data')
+
+function getTweetToPost()
+{
+    let randomIndex = Math.floor(Math.random() * 5)     // returns a random integer from 0 to 4
+
+    return message[randomIndex]
+}
