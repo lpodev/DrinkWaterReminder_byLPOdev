@@ -1,6 +1,6 @@
 // Required files
 var Twit = require('twit')
-require('./config/.const')
+require ('./config/.const')
 require ('./data/data')
 
 // Load your Twitter API into a Twit
@@ -15,6 +15,7 @@ var T = new Twit({
 
 let nbReminder = 43 // Variable that counts the Reminder number
 
+postTweet() // Executes the first tweet
 SetAnInterval() // Calls the function SetAnInterval that is in controller.js
 
 /** Controller */
@@ -23,7 +24,7 @@ function SetAnInterval() {
     setInterval(postTweet,1000*60*60);
 }
 
-function postTweet(nbReminder)
+function postTweet()
 {
     nbReminder += 1
     var tweet = getTweetToPost()
