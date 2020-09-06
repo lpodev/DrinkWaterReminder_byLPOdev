@@ -13,15 +13,26 @@ var T = new Twit({
   strictSSL:            true,     // optional - requires SSL certificates to be valid.
 });
 
-let nbReminder = 43 // Variable that counts the Reminder number
+let nbReminder = 137 // Variable that counts the Reminder number
 
-postTweet() // Executes the first tweet
-SetAnInterval() // Calls the function SetAnInterval that is in controller.js
+// Timer controls
+const minuteOfTheHour = 0;      // Checks if it is the minute zero of each hour (Ex: 12:00 or 20:00)
+let notYetPostedThisHour = true;
+setInterval(timeCheck,1000*55);     //checks the time every 55 seconds
+
 
 /** Controller */
-function SetAnInterval() {
-
-    setInterval(postTweet,1000*60*60);
+//check the actual time
+function timeCheck() {
+    var now = new Date();
+    if (now.getMinutes() == minuteOfTheHour) {      //if it's **:00 (ex : 21:00)
+        if (notYetPostedThisHour) {         //if there's no tweet at the hour then tweet
+            postTweet();
+            notYetPostedThisHour = false;
+        }
+    } else {
+        notYetPostedThisHour = true;
+    }
 }
 
 function postTweet()
