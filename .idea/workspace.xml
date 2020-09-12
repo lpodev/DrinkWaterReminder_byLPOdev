@@ -8,7 +8,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,11 +61,12 @@
       <workItem from="1598902021573" duration="4152000" />
       <workItem from="1598958629935" duration="1353000" />
       <workItem from="1598960049065" duration="105000" />
+      <workItem from="1599947775862" duration="175000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="422" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598960087984">

@@ -13,7 +13,7 @@ var T = new Twit({
   strictSSL:            true,     // optional - requires SSL certificates to be valid.
 });
 
-let nbReminder = 137 // Variable that counts the Reminder number
+let nbReminder = 0 // Variable that counts the Reminder number
 
 // Timer controls
 const minuteOfTheHour = 0;      // Checks if it is the minute zero of each hour (Ex: 12:00 or 20:00)
