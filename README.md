@@ -11,6 +11,8 @@ Twitter bot that reminds you to drink water every hour.
 ```shell
 npm install twit
 ```
+- In the _config_ file copy and paste the .const.js.example
+- Remove ".example" of the name
 - Replace '...' by your API keys
 
 - Run the program in CMD
