@@ -32,4 +32,4 @@ LPO - IT Student at CPNV
 Twit: https://github.com/ttezel/twit
 
 ### Contact
-luispedro.pinheiro@hotmail.com
+Feel free to open an issue to start a conversation.
