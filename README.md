@@ -1,7 +1,7 @@
 # DrinkWaterReminder_byLPOdev
 
 ## Twitter Account
-https://twitter.com/bylpodev
+https://twitter.com/bylpodev (Closed Account)
 
 ## Description
 Twitter bot that reminds you to drink water every hour.
@@ -26,10 +26,10 @@ node index.js
 
 ## Dev Team
 ### Info
-LPO - IT Student at CPNV
+LPOdev
 
 ### Used repositories
 Twit: https://github.com/ttezel/twit
 
 ### Contact
-Feel free to open an issue to start a conversation.
+*Feel free to open an issue* to start a conversation.
