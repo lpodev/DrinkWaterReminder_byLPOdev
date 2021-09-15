@@ -32,4 +32,4 @@ LPOdev
 Twit: https://github.com/ttezel/twit
 
 ### Contact
-*Feel free to open an issue* to start a conversation.
+**Feel free to open an issue** to start a conversation.
